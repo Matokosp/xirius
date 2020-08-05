@@ -41,9 +41,6 @@ ul#scene .cloud {
   position: absolute;
   bottom: 0;
 }
-ul#scene .cloud.blue {
-  /* margin-left: 150px; */
-}
 ul#scene .cloud.big {
   margin-left: -50px;
 }
@@ -53,7 +50,7 @@ ul#scene .cloud.big {
   z-index: 100;
   width: 8px;
   height: 8px;
-  background-color: #d76a6f;
+  background-color: #ff8f94;
   border-radius: 50px;
   pointer-events: none;
   background-blend-mode: difference;
@@ -66,7 +63,7 @@ ul#scene .cloud.big {
   /* width: 24px;
   height: 24px; */
   background: none;
-  border: solid 2px #d76a6f;
+  border: solid 2px #ff8f94;
   border-radius: 50px;
   pointer-events: none;
   background-blend-mode: difference;
