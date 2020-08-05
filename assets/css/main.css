@@ -1,5 +1,6 @@
 body,
 html {
+  cursor: none;
   padding: 0;
   margin: 0;
   /* width: 100%; */
@@ -41,121 +42,35 @@ ul#scene .cloud {
   bottom: 0;
 }
 ul#scene .cloud.blue {
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 ul#scene .cloud.big {
-  /* margin-left: -150px; */
-}
-ul#scene .cloud.top {
-  right: 0;
-  margin-right: -100px;
-  margin-top: -100px;
-  bottom: initial;
-  top: 0;
-  width: 20vw;
+  margin-left: -50px;
 }
 
+#cursor {
+  position: fixed;
+  z-index: 100;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50px;
+  pointer-events: none;
+  background-blend-mode: difference;
+  mix-blend-mode: difference;
+}
 
-.rocket-container-outer {
-  width: 100%;
-  height: 100%;
-  postion: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-}
-.rocket-container {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  height: 200%;
-  width: 50px;
-  overflow: hidden;
-}
-.rocket-container .rocket {
-  -webkit-transition: top 1.8s ease-out;
-  transition: top 1.8s ease-out;
-  position: relative;
-  top: 100%;
-}
-.rocket-container .rocket img {
-  -webkit-transition: all 0.4s cubic-bezier(0, -0.46, 1, -0.49);
-  transition: all 0.4s cubic-bezier(0, -0.46, 1, -0.49);
-}
-.rocket-container.fly .rocket {
-  top: 35%;
-}
-.rocket-container.fly .rocket img {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-.rocket-container.fly .flight-path {
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-}
-.rocket-container.fly .flight-path .path {
-  height: 700px;
-}
-.rocket-container.fly .flight-path .path:nth-child(1) {
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  height: 820px;
-}
-.rocket-container.fly .flight-path .path:nth-child(2) {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  height: 800px;
-}
-.rocket-container.fly .flight-path .path:nth-child(3) {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  height: 830px;
-}
-.flight-path {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-transition: all 4.2s ease-out;
-  transition: all 4.2s ease-out;
-  height: 400px;
-}
-.flight-path .path {
-  width: 5px;
-  height: 200px;
-  -webkit-transition: all 5.8s ease-out;
-  transition: all 5.8s ease-out;
-  margin: 0 0.2rem 0;
-  position: relative;
-  background: #fff34f;
-}
-.flight-path .path:before {
-  content: '';
-  border-radius: 50%;
-  top: -2.5px;
-  left: calc(50% - 2.5px);
-  background: #fff34f;
-  position: absolute;
-  width: 5px;
-  height: 5px;
-}
-.flight-path .path:after {
-  content: '';
-  border-radius: 50%;
-  bottom: -2.5px;
-  left: calc(50% - 2.5px);
-  background: #fff34f;
-  position: absolute;
-  width: 5px;
-  height: 5px;
-}
-.flight-path .path.white-top {
-  top: 0;
-  right: 0;
-  z-index: 20;
-  width: 30vw;
+#cursorRound{
+  position: fixed;
+  z-index: 100;
+  /* width: 24px;
+  height: 24px; */
+  background: none;
+  border: solid 2px #fff;
+  border-radius: 50px;
+  pointer-events: none;
+  background-blend-mode: difference;
+  mix-blend-mode: difference;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 0.5, 0.7, 1);
 }
