@@ -35,13 +35,16 @@ ul#scene li {
 }
 ul#scene .cloud {
   width: 100%;
-  margin-left: -100px;
+  /* margin-left: -100px; */
   /* margin-bottom: -100px; */
   position: absolute;
   bottom: 0;
 }
 ul#scene .cloud.blue {
   margin-left: 150px;
+}
+ul#scene .cloud.big {
+  /* margin-left: -150px; */
 }
 ul#scene .cloud.top {
   right: 0;
