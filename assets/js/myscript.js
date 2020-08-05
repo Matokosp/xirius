@@ -17,8 +17,8 @@ var md = window.matchMedia( "(min-width: 1000px)" );
 			$("#cursorRound").show();
 			$('#cursorRound').css({
 				opacity: '1',
-        left: e.clientX - 28,
-        top: e.clientY - 28,
+        left: e.clientX - 8,
+        top: e.clientY - 8,
 				width: '20px',
 				height: '20px'
       });
