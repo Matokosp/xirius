@@ -34,8 +34,9 @@ ul#scene li {
   position: relative;
 }
 ul#scene .cloud {
+  width: 100%;
   margin-left: -100px;
-  margin-bottom: -100px;
+  /* margin-bottom: -100px; */
   position: absolute;
   bottom: 0;
 }
