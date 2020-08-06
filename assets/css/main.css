@@ -1,6 +1,6 @@
 body,
 html {
-  cursor: none;
+  /* cursor: none; */
   padding: 0;
   margin: 0;
   /* width: 100%; */
@@ -24,7 +24,7 @@ html {
   width: 40vw;
 }
 
-.space path {
+.category path {
   fill: transparent;
   stroke: #fff;
   stroke-width: 0.5px;
@@ -34,11 +34,24 @@ html {
 .space:hover path {
   fill: #fff;
   transform: scale(1.02);
-  /* transform: translateX(0%); */
-  /* transform-origin: right top; */
 }
 
+.earth:hover path {
+  fill: #fff;
+  transform: scale(1.02);
+  transform-origin: right bottom;
+}
 
+.water:hover path {
+  fill: #fff;
+  transform: scale(1.02);
+  transform-origin: bottom right;
+}
+
+.space-hover {
+  position: relative;
+  z-index: 50;
+}
 
 ul {
   list-style: none;
@@ -78,8 +91,8 @@ ul#scene .cloud.big {
   background-color: #ff8f94;
   border-radius: 50px;
   /* pointer-events: none; */
-  background-blend-mode: difference;
-  mix-blend-mode: difference;
+  background-blend-mode: color-dodge;
+  mix-blend-mode: color-dodge;
 }
 
 #cursorRound{
@@ -91,8 +104,8 @@ ul#scene .cloud.big {
   border: solid 2px #ff8f94;
   border-radius: 50px;
   pointer-events: none;
-  background-blend-mode: difference;
-  mix-blend-mode: difference;
+  background-blend-mode: color-dodge;
+  mix-blend-mode: color-dodge;
   transition: 0.5s;
   transition-timing-function: cubic-bezier(0.2, 0.5, 0.7, 1);
 }
