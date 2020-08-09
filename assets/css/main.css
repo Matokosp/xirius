@@ -1,86 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
-  /* cursor: none; */
+  cursor: none;
   padding: 0;
   margin: 0;
-  /* width: 100%; */
-  /* height: 100%; */
-  background: #8bdbed;
-}
-
-.header {
-  position: relative;
-  background-color: #050F2B;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  display: flex;
-}
-
-.constelacion {
-  /* position: absolute; */
-  z-index: 50;
-  margin: auto;
-  width: 40vw;
-}
-
-.category path {
-  fill: transparent;
-  stroke: #fff;
-  stroke-width: 0.5px;
-  transition: 0.5s;
-}
-
-.space:hover path {
-  fill: #fff;
-  transform: scale(1.02);
-}
-
-.earth:hover path {
-  fill: #fff;
-  transform: scale(1.02);
-  transform-origin: right bottom;
-}
-
-.water:hover path {
-  fill: #fff;
-  transform: scale(1.02);
-  transform-origin: bottom right;
-}
-
-.space-hover {
-  position: relative;
-  z-index: 50;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-ul#scene {
-  width: 100%;
-  position: absolute;
-  height: 100%;
-}
-ul#scene li {
+  /* overflow: hidden; */
   width: 100%;
   height: 100%;
-  position: relative;
+  font-family: 'Work Sans', sans-serif;
+  color: #050F2B;
 }
-ul#scene .cloud {
-  width: 100%;
-  /* margin-left: -100px; */
-  /* margin-bottom: -100px; */
-  position: absolute;
-  bottom: 0;
+
+h1,h2,h3,h4 {
+  font-family: 'Playfair Display', serif;
 }
-ul#scene .cloud.big {
-  width: 120vw;
-  margin-left: -200px;
+
+p {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
 }
 
 #cursor {
@@ -108,4 +59,167 @@ ul#scene .cloud.big {
   mix-blend-mode: color-dodge;
   transition: 0.5s;
   transition-timing-function: cubic-bezier(0.2, 0.5, 0.7, 1);
+}
+
+.header {
+  position: relative;
+  background-color: #050F2B;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  background-image: url('../images/header-res-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.logos {
+  position: absolute;
+  top: 15px;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+}
+
+.logos img {
+  width: 100%;
+}
+
+.constelacion {
+  /* position: absolute; */
+  z-index: 50;
+  margin: auto;
+  width: 90vw;
+}
+
+.space, .earth, .water {
+  display: none;
+}
+
+.category path {
+  fill: #fff;
+  stroke: transparent;
+  stroke-width: 0.5px;
+  transition: 0.5s;
+}
+
+.space:hover path {
+  /* fill: transparent; */
+  /* stroke: #fff; */
+  transform: scale(1.02);
+}
+
+.earth:hover path {
+  /* fill: transparent; */
+  /* stroke: #fff; */
+  transform: scale(1.02);
+  transform-origin: right bottom;
+}
+
+.water:hover path {
+  /* fill: transparent; */
+  /* stroke: #fff; */
+  transform: scale(1.02);
+  transform-origin: bottom right;
+}
+
+.space-hover {
+  position: relative;
+  z-index: 50;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+ul#scene {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+ul#scene li {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+ul#scene .cloud {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+ul#scene .cloud.big {
+  width: 120vw;
+  margin-left: -10vw;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile_categories {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+}
+
+.mobile_categories ul span {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid white;
+}
+
+.mobile_categories ul li a {
+  font-size: 2rem;
+}
+
+.home_about {
+  position: relative;
+  width: 100%;
+  padding: 30px 5vw;
+}
+
+.home_about_title h3 {
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-bottom: 2px solid #050F2B;
+  padding-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-top: 1px solid #050F2B;
+  width: 90vw;
+  margin: auto;
+}
+
+.footer img {
+  width: 20%;
+  height: 100%;
+}
+
+.footer_button {
+  border: 1px solid #050F2B;
+  padding: 5px 5px;
+  background: none;
+  -webkit-appearance: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }

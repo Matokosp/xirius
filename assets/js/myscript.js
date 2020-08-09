@@ -1,12 +1,24 @@
-var md = window.matchMedia( "(min-width: 1000px)" );
+// SCROLL WINDOW TO ID
+
+$('a[href^="#"]').on('click', function(event) {
+		var target = $(this.getAttribute('href'));
+		if( target.length ) {
+				event.preventDefault();
+				$('html, body').stop().animate({
+						scrollTop: target.offset().top
+				}, 1000);
+		}
+});
+
+var md = window.matchMedia( "(min-width: 1100px)" );
 
   if (md.matches) {
 
     $(document).ready(function(){
       // $("#cursorRound").show();
       $('#cursorRound').css({
-        width: '20px',
-				height: '20px'
+        width: '24px',
+				height: '24px'
       })
     });
 

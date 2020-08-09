@@ -2,17 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xirius</title>
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-
+    <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
   <body>
     <div id="cursor"></div>
     <div id="cursorRound"></div>
-    <header class="header">
+    <header class="header" id="sectionOne">
+      <div class="logos">
+        <img src="assets/images/prisma-logo-white.png" alt="prisma">
+        <img src="assets/images/ars-logo-white.png" alt="ars electronica">
+      </div>
       <div class="constelacion">
         <?xml version="1.0" encoding="utf-8"?>
         <!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -154,7 +159,7 @@
         		c0.1,0.1,0,0.4-0.1,0.5c-0.1,0.1-0.2,0.3-0.5,0.3c-0.3,0-0.2,0.2-0.2,0.4C4.6,590,4.4,590.3,4.1,590.4z"/>
 
 
-          <a class="category space">
+          <a href="space.html" class="category space desktop">
             <rect x="505.8" y="203" class="st2 space-hover" width="72.9" height="35.5"/>
             <path class="st0" d="M529.8,213.3c0.4,0.1,0.8,0.3,1.1,0.5c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0,0.2,0.1,0.2,0.1c0.1,0,0.2-0.1,0.2-0.2
           		c0.1-0.1,0.1-0.3,0.1-0.5h0.4c-0.1,0.8-0.1,2.1-0.1,3.9h-0.4c0-0.6-0.2-1.2-0.4-1.7c-0.2-0.6-0.6-1-1-1.4c-0.4-0.4-0.9-0.5-1.4-0.5
@@ -190,7 +195,7 @@
           		C563.5,216.5,563.2,217.5,563.1,219.4z"/>
           </a>
 
-          <a class="category earth">
+          <a href="earth.html" class="category earth desktop">
             <rect x="99.9" y="104.6" class="st2 space-hover" width="72.9" height="35.5"/>
             <path class="st0" d="M124.2,126.1c-0.7,0-1.9,0-3.7,0c-2.5,0-4.4,0-5.6,0v-0.3c0.3,0,0.6-0.1,0.7-0.1c0.2-0.1,0.3-0.2,0.3-0.4
           		c0.1-0.2,0.1-0.5,0.1-0.9v-7.9c0-0.4,0-0.7-0.1-0.9c-0.1-0.2-0.2-0.3-0.3-0.4s-0.4-0.1-0.7-0.1v-0.3c1.2,0,3.1,0,5.6,0
@@ -223,7 +228,7 @@
           		/>
           </a>
 
-          <a class="category water">
+          <a href="water.html" class="category water desktop">
             <rect x="59.4" y="465.3" class="st2 space-hover" width="72.9" height="35.5"/>
             <path class="st0" d="M86.8,473.2v0.3c-0.6,0.3-1.1,1.1-1.5,2.2l-2.7,8.8c-0.3,0-0.6,0-0.8,0c-0.2,0-0.5,0-0.8,0l-2.1-6.4l-2.3,6.4
           		c-0.3,0-0.6,0-0.8,0c-0.2,0-0.5,0-0.8,0l-3.7-10c-0.1-0.3-0.3-0.6-0.4-0.8s-0.3-0.3-0.5-0.3v-0.3c0.8,0,1.7,0,2.8,0
@@ -254,23 +259,39 @@
           </a>
         </g>
         </svg>
-
       </div>
-      <ul id="scene">
+      <ul class="desktop" id="scene">
         <li class="layer" data-depth="0.1"><img class="cloud" src="assets/images/stars-beyond.png" alt="" /></li>
         <li class="layer" data-depth="0.2"><img class="cloud" src="assets/images/stars-zero.png" alt="" /></li>
         <li class="layer" data-depth="0.3"><img class="cloud" src="assets/images/stars.png" alt="" /></li>
-          <li class="layer" data-depth="0.5"><img class="cloud" src="assets/images/stars-1.png" alt="" /></li>
-          <li class="layer" data-depth="0.8"><img class="cloud" src="assets/images/stars-2.png" alt="" /></li>
-          <li class="layer" data-depth="1"><img class="cloud" src="assets/images/stars-3.png" alt="" /></li>
-          <li class="layer" data-depth="1.2"><img class="cloud big" src="assets/images/stars-4.png" alt="" /></li>
+        <li class="layer" data-depth="0.5"><img class="cloud" src="assets/images/stars-1.png" alt="" /></li>
+        <li class="layer" data-depth="0.8"><img class="cloud" src="assets/images/stars-2.png" alt="" /></li>
+        <li class="layer" data-depth="1"><img class="cloud" src="assets/images/stars-3.png" alt="" /></li>
+        <li class="layer" data-depth="1.2"><img class="cloud big" src="assets/images/stars-4.png" alt="" /></li>
       </ul>
+      <div class="mobile_categories mobile">
+        <ul>
+          <span>Go to:</span>
+          <li><a href="space.html">Space</a></li>
+          <li><a href="earth.html">Earth</a></li>
+          <li><a href="water.html">Water</a></li>
+        </ul>
+      </div>
     </header>
     <section class="home_about">
-      <div class="col-3">
-
+      <div class="home_about_title">
+        <h3>About</h3>
+      </div>
+      <div class="home_about_text">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
       </div>
     </section>
+    <footer class="footer">
+      <img src="assets/images/xirius-logo-blue.png" alt="">
+      <a href="#sectionOne" class="footer_button">Back to top</a>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.js"></script>
     <script type="text/javascript">
