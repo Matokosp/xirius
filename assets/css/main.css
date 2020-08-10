@@ -25,6 +25,7 @@ p {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: inherit;
 }
 
 .desktop {
@@ -32,33 +33,6 @@ a {
 }
 .mobile {
   display: block;
-}
-
-#cursor {
-  position: fixed;
-  z-index: 100;
-  width: 8px;
-  height: 8px;
-  background-color: #ff8f94;
-  border-radius: 50px;
-  /* pointer-events: none; */
-  background-blend-mode: color-dodge;
-  mix-blend-mode: color-dodge;
-}
-
-#cursorRound{
-  position: fixed;
-  z-index: 100;
-  /* width: 24px;
-  height: 24px; */
-  background: none;
-  border: solid 2px #ff8f94;
-  border-radius: 50px;
-  pointer-events: none;
-  background-blend-mode: color-dodge;
-  mix-blend-mode: color-dodge;
-  transition: 0.5s;
-  transition-timing-function: cubic-bezier(0.2, 0.5, 0.7, 1);
 }
 
 .header {
@@ -78,8 +52,8 @@ a {
   position: absolute;
   top: 15px;
   left: 5vw;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   width: 8rem;
 }
 
@@ -222,4 +196,82 @@ section {
   -webkit-appearance: none;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
+}
+
+/* CATEGORY PAGE */
+
+.clip-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 30vw;
+    font-weight: 700;
+    line-height: 1;
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    /* margin: .25em; */
+    /* padding: .5em .75em; */
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-image: inherit; */
+}
+
+.clip-text_one {
+    background-size: cover;
+    background-image: url('../images/category-bkg.jpg');
+}
+
+.category_items {
+  margin: 15vh auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.category_items > div {
+  margin: 100px auto 50px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.category_items div img {
+  width: 60%;
+}
+
+.category_item-text {
+  width: 30%;
+}
+
+.category_item-text h3 {
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.category_item-text h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin: 5px 0;
 }

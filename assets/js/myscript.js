@@ -62,4 +62,10 @@ var md = window.matchMedia( "(min-width: 1100px)" );
       })
     })
 
+		// HOVER CATEGORY PAGE EFFECT
+
+		// new hoverEffect({
+		//
+		// });
+
     }
