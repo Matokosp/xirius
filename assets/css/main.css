@@ -10,12 +10,15 @@ html {
   /* overflow: hidden; */
   width: 100%;
   height: 100%;
-  font-family: 'Work Sans', sans-serif;
-  color: #050F2B;
+  font-family: "Work Sans", sans-serif;
+  color: #050f2b;
 }
 
-h1,h2,h3,h4 {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
 }
 
 p {
@@ -37,12 +40,12 @@ a {
 
 .header {
   position: relative;
-  background-color: #050F2B;
+  background-color: #050f2b;
   height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;
-  background-image: url('../images/header-res-background.jpg');
+  background-image: url("../images/header-res-background.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -68,7 +71,9 @@ a {
   width: 90vw;
 }
 
-.space, .earth, .water {
+.space,
+.earth,
+.water {
   display: none;
 }
 
@@ -143,12 +148,12 @@ section {
   bottom: 5vh;
   right: 5vw;
   color: #fff;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 800;
 }
 
 .mobile_categories ul span {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   border-bottom: 1px solid white;
@@ -178,18 +183,18 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.5rem;
-  border: 2px solid #050F2B;
+  border: 2px solid #050f2b;
   padding: 10px;
   margin: 0;
   transition: 0.5s;
 }
 
 .about-butt:hover {
-  background-color: rgba(12,20,43,0.5);
+  background-color: rgba(12, 20, 43, 0.5);
 }
 
 .home_about_title-active {
-  background-color: #050F2B;
+  background-color: #050f2b;
   color: #fff;
 }
 
@@ -200,7 +205,7 @@ section {
 }
 
 .team_title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 700;
   border-bottom: 1px solid #071438;
   padding-bottom: 8px;
@@ -213,14 +218,14 @@ section {
 }
 
 .profile_name {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 5px;
 }
 
 .profile_ocupation {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   margin: 0;
@@ -239,31 +244,42 @@ section {
   font-size: 1.2rem;
 }
 
+/* FOOTER SECTION */
+
 .footer {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 0px;
-  border-top: 1px solid #050F2B;
+  align-items: flex-start;
+  padding: 60px 0px 20px 0;
+  border-top: 1px solid #050f2b;
   width: 90vw;
   margin: auto;
 }
 
-.footer img {
-  width: 100px;
-  height: 100%;
+.footer_top_logo {
+  width: 120px;
+}
+
+.footer_content p {
+  font-size: 0.9rem;
+}
+
+.footer_bottom_logos {
+  width: 100%;
+  height: auto;
 }
 
 .footer_button {
   position: absolute;
   top: 10px;
   right: 10px;
-  border: 1px solid #050F2B;
+  border: 1px solid #050f2b;
   padding: 5px 5px;
   background: none;
   -webkit-appearance: none;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   cursor: pointer;
 }
@@ -271,42 +287,42 @@ section {
 /* CATEGORY PAGE */
 
 .clip-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 30vw;
-    font-weight: 700;
-    line-height: 1;
-    position: fixed;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    /* margin: .25em; */
-    /* padding: .5em .75em; */
-    text-align: center;
-    /* Color fallback */
-    color: #fff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-family: "Playfair Display", serif;
+  font-size: 30vw;
+  font-weight: 700;
+  line-height: 1;
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  /* margin: .25em; */
+  /* padding: .5em .75em; */
+  text-align: center;
+  /* Color fallback */
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .clip-text:before,
 .clip-text:after {
-    position: absolute;
-    content: '';
+  position: absolute;
+  content: "";
 }
 
 /* Background */
 .clip-text:before {
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /* background-image: inherit; */
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background-image: inherit; */
 }
 
 .clip-text_one {
-    background-size: cover;
-    background-image: url('../images/category-bkg.jpg');
+  background-size: cover;
+  background-image: url("../images/category-bkg.jpg");
 }
 
 .category_items {
@@ -334,14 +350,14 @@ section {
 
 .category_item-text h3 {
   font-size: 1rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   margin: 5px 0;
 }
 
 .category_item-text h5 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   margin: 5px 0;
 }

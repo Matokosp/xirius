@@ -1,5 +1,27 @@
-@media (min-width: 900px) and (orientation: portrait) {
+@media (min-width: 760px) and (orientation: portrait) {
+  /* FOOTER SECTION */
 
+  .footer {
+    padding: 60px 0px 20px 0;
+    border-top: 1px solid #050f2b;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .footer_content p {
+    font-size: 0.9rem;
+  }
+
+  .footer_content {
+    width: 50%;
+  }
+
+  .footer_button {
+    top: 20px;
+  }
+}
+
+@media (min-width: 900px) and (orientation: portrait) {
   /* TEAM SECTION */
 
   .team_profile-flex {
@@ -21,21 +43,16 @@
   /* SLICK */
 
   .slick-prev,
-  .slick-next
-  {
-      bottom: 18%;
+  .slick-next {
+    bottom: 18%;
   }
 
-  .slick-dots
-  {
-      bottom: 20%;
+  .slick-dots {
+    bottom: 20%;
   }
-
 }
 
-
 @media (min-width: 1100px) and (orientation: landscape) {
-
   #cursor {
     position: fixed;
     z-index: 100;
@@ -48,7 +65,7 @@
     mix-blend-mode: color-dodge;
   }
 
-  #cursorRound{
+  #cursorRound {
     position: fixed;
     z-index: 100;
     /* width: 24px;
@@ -147,14 +164,18 @@
   /* SLICK */
 
   .slick-prev,
-  .slick-next
-  {
-      bottom: 18%;
+  .slick-next {
+    bottom: 18%;
   }
 
-  .slick-dots
-  {
-      bottom: 20%;
+  .slick-dots {
+    bottom: 20%;
+  }
+
+  /* RRSS SECTION */
+
+  .rrss_section {
+    padding: 0 5vw;
   }
 
   /* FOOTER SECTION */
@@ -165,14 +186,25 @@
     padding-top: 40px;
   }
 
-  .footer img {
-    width: 15%;
-    max-width: 170px;
+  .footer_top_logo {
+    width: 180px;
+  }
+
+  .footer_content p {
+    font-size: 0.8rem;
+  }
+
+  .footer_content {
+    width: 50%;
+  }
+
+  .footer_button {
+    top: 20px;
   }
 
   .footer_button:hover {
     display: block;
-    background-color: #050F2B;
+    background-color: #050f2b;
     color: #fff;
     transition: 0.5s;
     cursor: none;
@@ -181,9 +213,9 @@
   /* CATEGORY PAGE */
 
   .clip-text {
-      font-size: 25vw;
-      line-height: 1;
-      top: -40px;
+    font-size: 25vw;
+    line-height: 1;
+    top: -40px;
   }
 
   .category_items {
@@ -226,7 +258,6 @@
 }
 
 @media (min-width: 1440px) and (orientation: landscape) {
-
   p {
     font-size: 1rem;
   }
@@ -244,10 +275,9 @@
   /* CATEGORY PAGE */
 
   .clip-text {
-      font-size: 25vw;
-      line-height: 1;
+    font-size: 25vw;
+    line-height: 1;
   }
-
 
   .category_items > div {
     margin: 90px 4%;
@@ -256,5 +286,4 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
 }
