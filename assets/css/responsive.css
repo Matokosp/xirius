@@ -294,6 +294,10 @@
     font-size: 1rem;
   }
 
+  .logos {
+    width: 12vw;
+  }
+
   .home_about_title h3 {
     font-size: 2rem;
   }
