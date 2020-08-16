@@ -41,7 +41,6 @@ var md = window.matchMedia( "(min-width: 1100px)" );
         top: e.clientY - 8
       });
 
-			// i = setTimeout('$("#cursorRound").css({width:"0",height:"0",opacity: "0"});', 1000);
 
     }).mouseleave(function() {
 				clearTimeout(i);
@@ -62,10 +61,35 @@ var md = window.matchMedia( "(min-width: 1100px)" );
       })
     })
 
-		// HOVER CATEGORY PAGE EFFECT
-
-		// new hoverEffect({
-		//
-		// });
-
     }
+
+
+		// HOME ABOUT TITLES
+
+		$( document ).ready(function() {
+		   $('#prismaText').hide();
+		});
+
+		$('#aboutButt').on('click', function(){
+			$('#aboutText').show();
+			$('#prismaText').hide();
+			$('#aboutButt').addClass('home_about_title-active');
+			$('#prismaButt').removeClass('home_about_title-active');
+		})
+
+		$('#prismaButt').on('click', function(){
+			$('#prismaText').show();
+			$('#aboutText').hide();
+			$('#aboutButt').removeClass('home_about_title-active');
+			$('#prismaButt').addClass('home_about_title-active');
+		})
+
+		// SLICK JS
+
+
+$('.team_slider').slick({
+	dots: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});

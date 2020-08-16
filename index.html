@@ -7,6 +7,9 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- SLICK JS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <!-- MY STYLE -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -16,8 +19,7 @@
     <div id="cursorRound"></div>
     <header class="header" id="sectionOne">
       <div class="logos">
-        <img src="assets/images/prisma-logo-white.png" alt="prisma">
-        <img src="assets/images/ars-logo-white.png" alt="ars electronica">
+        <img src="assets/images/ars-prisma-logos.svg" alt="prisma">
       </div>
       <div class="constelacion">
         <?xml version="1.0" encoding="utf-8"?>
@@ -281,16 +283,53 @@
     </header>
     <section class="home_about">
       <div class="home_about_title">
-        <h3>About</h3>
+        <h3 id="aboutButt" class="about-butt home_about_title-active">About</h3>
+        <h3 id="prismaButt" class="about-butt">Prisma</h3>
       </div>
       <div class="home_about_text">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p id="aboutText">The following project is presented by PRISMA: Art, Science, Technology, which consists of an inter-institutional initiative based in Santiago de Chile dedicated to promote the investigation, production and exhibition of different kinds of works located at the intersections of art, science and technology with particular interest in nature. PRISMA has been collaboratively founded by the Pontifical Catholic University of Chile and University of Chile in 2019, with the aim of making visible theoretical and practical research related to transdisciplinary convergence between the aforementioned fields. PRISMA has been created by three specialists whose respective research intersects art, science and technology: Alejandro Jofré (PhD in Applied Mathematics from the University of Pau – France, and Principal Researcher of the Center for Mathematical Modeling at University of Chile); Valentina Serrati (media artist, researcher and teacher, MA in Digital Media from Goldsmiths University – London, and Head of Extension of the Art Schools at the Pontifical Catholic University of Chile); and Jazmín Adler (art historian, researcher and curator, PhD in Comparative Theory of Arts from the National University of Tres de Febrero, UNTREF - Buenos Aires; postdoctoral fellow at the Argentine Council for Scientific and Technical Research, and professor at the BA and MA in Electronic Arts – UNTREF).</p>
+        <p id="prismaText">asdasdasdadsaLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et  ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
       </div>
     </section>
+    <section class="team_section">
+      <h2 class="team_title">TEAM</h2>
+      <div class="team_slider">
+
+        <div class="team_profile">
+          <div class="team_profile-flex">
+            <div class="profile_title">
+              <img class="profile_img" src="assets/images/profile-test.png" alt="">
+              <h3 class="profile_name">Robert Brown</h3>
+              <h5 class="profile_ocupation">Scientist</h5>
+            </div>
+            <div class="profile_text">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team_profile">
+          <div class="profile_title">
+            <img class="profile_img" src="assets/images/profile-test-2.png" alt="">
+            <h3 class="profile_name">Robert Brown</h3>
+            <h5 class="profile_ocupation">Scientist</h5>
+          </div>
+          <div class="profile_text">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rrss_section">
+      <a href="https://www.instagram.com">EMAIL</a>
+      <a href="https://www.instagram.com">INSTAGRAM</a>
+    </section>
     <footer class="footer">
-      <img src="assets/images/xirius-logo-blue.png" alt="">
+      <img src="assets/images/logo-xirius.svg" alt="">
+      <p>XIRIUS is a virtual platform for navigation among agents who dialogue in the orbits of scientific knowledge and the arts. The project is based on Canis Major constellation with its star Sirius, which lights up its nose like the hound in the Hunter constellation. This dog is a seeker who helps his master to find what he needs; at the same time this star is the most luminous in the southern hemisphere when spring arrives, being a sign for the native peoples of the time of sowing and planting.
+
+In this space XIRIUS is a link between art and science projects already in feedback with each other, as well as in potential collaboration. The structure of XIRIUS works on the basis of diverse origins projects that are transformed into nodes of connection open to interaction, forming constellations of knowledge in different stages activity, sharing experiences, data, dialogues and possibilities; assuming a notion of complementary and sustainable development in constant enrichment.</p>
       <a href="#sectionOne" class="footer_button">Back to top</a>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -300,6 +339,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
       var parallax = $('#scene').parallax()
     </script>
+    <script type="text/javascript" src="assets/js/slick.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>
   </body>
 </html>
