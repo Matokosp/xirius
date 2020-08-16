@@ -273,7 +273,7 @@ section {
 
 .footer_button {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 10px;
   border: 1px solid #050f2b;
   padding: 5px 5px;
@@ -293,7 +293,7 @@ section {
   line-height: 1;
   position: fixed;
   display: inline-block;
-  top: 0;
+  top: -1rem;
   right: 0;
   /* margin: .25em; */
   /* padding: .5em .75em; */
@@ -325,14 +325,26 @@ section {
   background-image: url("../images/category-bkg.jpg");
 }
 
+.category_menu {
+  margin-top: 22vh;
+  position: relative;
+  right: 0;
+}
+
+.category_menu li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
 .category_items {
-  margin: 15vh auto;
+  margin: 0 auto 15vh auto;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.category_items > div {
-  margin: 100px auto 50px auto;
+.category_item-div {
+  margin: 0 auto 80px auto;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -340,12 +352,25 @@ section {
   justify-content: space-between;
 }
 
-.category_items div img {
+.category_item-div--text {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 2px;
+}
+
+.category_item-div img {
   width: 60%;
 }
 
 .category_item-text {
   width: 30%;
+}
+
+.category_item_project_title {
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .category_item-text h3 {
