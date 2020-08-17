@@ -290,6 +290,32 @@
 
   /* PROJECT SINGLE PAGE */
 
+  .project_menu {
+    width: 95vw;
+    mix-blend-mode: color-burn;
+    right: -30vw;
+  }
+
+  .project_menu-fixed {
+    position: fixed;
+    left: 100px;
+  }
+
+  .project_menu h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .project_menu-division {
+    height: 2px;
+  }
+
+  .project_menu h5 {
+    font-size: 1rem;
+  }
+
+  /* PROJECT PAGE BODY */
+
   .project_body {
     display: flex;
     align-items: center;
@@ -357,6 +383,7 @@
   }
 
   .project_next_arrow {
+    display: block;
     position: absolute;
     bottom: 30px;
     right: 20px;
@@ -375,7 +402,7 @@
   .project_video {
     cursor: pointer;
     width: 100vw;
-    /* padding-bottom: 56.25%; */
+    padding-bottom: 0;
     position: relative;
   }
 
@@ -413,9 +440,15 @@
 
   /* PROJECT IMAGES */
 
-  .project_img img {
+  .project_img {
     height: 98.3vh;
+    /* display: none; */
+  }
+
+  .project_img img {
+    height: 100%;
     width: 100%;
+    /* display: none; */
   }
 }
 
