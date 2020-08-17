@@ -292,7 +292,7 @@
 
   .project_menu {
     width: 95vw;
-    mix-blend-mode: color-burn;
+    /* mix-blend-mode: color-burn; */
     right: -30vw;
   }
 
@@ -304,10 +304,6 @@
   .project_menu h4 {
     font-size: 1.2rem;
     font-weight: 400;
-  }
-
-  .project_menu-division {
-    height: 2px;
   }
 
   .project_menu h5 {

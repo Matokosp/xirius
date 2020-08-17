@@ -60,17 +60,6 @@ if (md.matches) {
       background: "transparent",
     });
   });
-
-  var projectMenu = $(".project_menu").offset();
-  console.log(projectMenu.top);
-
-  $(window).on("scroll", function () {
-    if ($(window).scrollLeft() >= projectMenu.left - 100) {
-      $(".project_menu").addClass("project_menu-fixed");
-    } else {
-      $(".project_menu").removeClass("project_menu-fixed");
-    }
-  });
 }
 
 // HOME ABOUT TITLES
