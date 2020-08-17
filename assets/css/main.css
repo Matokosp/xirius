@@ -4,7 +4,7 @@
 
 body,
 html {
-  /* cursor: none; */
+  cursor: none;
   padding: 0;
   margin: 0;
   /* overflow: hidden; */
@@ -12,6 +12,7 @@ html {
   height: 100%;
   font-family: "Work Sans", sans-serif;
   color: #050f2b;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -356,6 +357,10 @@ section {
   background-color: #fff;
   padding: 20px 30px;
   border-radius: 2px;
+}
+
+.project_single-butt {
+  cursor: pointer;
 }
 
 .category_item-div img {

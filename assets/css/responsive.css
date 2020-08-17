@@ -287,6 +287,136 @@
   .category_item-text h5 {
     font-size: 1rem;
   }
+
+  /* PROJECT SINGLE PAGE */
+
+  .project_body {
+    display: flex;
+    align-items: center;
+    height: 98.3vh;
+    scroll-behavior: smooth;
+  }
+
+  .horizontal-scroll-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 98.3vh;
+  }
+
+  .horizontal-scroll-wrapper > div {
+    /* padding: 0 10vw; */
+  }
+
+  .horizontal-scroll-wrapper div:nth-child(even) {
+    /* background-color: pink; */
+  }
+
+  .project_description {
+    padding: 30vh 10vw 0 5vw;
+    width: 60vw;
+    position: relative;
+  }
+
+  .project_title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  .project_title span {
+    font-weight: 400;
+  }
+
+  .project_description p {
+    font-size: 0.9rem;
+  }
+
+  .project_authors {
+    padding: 0;
+  }
+
+  .project_authors li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    font-size: 1.2rem;
+  }
+
+  .project_authors li:nth-child(1) {
+    font-weight: 600;
+  }
+
+  .autor_division {
+    display: inline-block;
+    background-color: #050f2b;
+    height: 1rem;
+    width: 2px;
+    vertical-align: middle;
+  }
+
+  .project_next_arrow {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+  }
+
+  .project_next_arrow img {
+    width: 100%;
+  }
+
+  /* PROJECT VIDEO DIV */
+  * {
+    box-sizing: border-box;
+  }
+
+  .project_video {
+    cursor: pointer;
+    width: 100vw;
+    /* padding-bottom: 56.25%; */
+    position: relative;
+  }
+
+  .project_video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* PROJECT SECTIONS WITHIN THE SINGLE */
+
+  .project_section {
+    width: 60vw;
+    padding: 0 10vw;
+  }
+
+  .project_section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 98.2vh;
+  }
+
+  .project_section-container h3 {
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    align-self: flex-start;
+  }
+
+  .project_section-container ul {
+    align-self: flex-start;
+  }
+
+  /* PROJECT IMAGES */
+
+  .project_img img {
+    height: 98.3vh;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1440px) and (orientation: landscape) {

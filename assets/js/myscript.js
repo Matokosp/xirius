@@ -81,5 +81,3 @@ $("#prismaButt").on("click", function () {
   $("#aboutButt").removeClass("home_about_title-active");
   $("#prismaButt").addClass("home_about_title-active");
 });
-
-// SLICK JS
